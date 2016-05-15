@@ -1,0 +1,27 @@
+What happens when you initialize a repository? Why do you need to do it?
+Git init is used to start using the git on a projects that is not under git.
+It starts tracking the files, when they were changed, are they commited.
+
+We need to do this so as to use the benefits of git and git tracking,
+that all the developers at same/different locations can now collaborate.
+
+
+How is the staging area different from the working directory and the repository? 
+What value do you think it offers?
+When you commit it's only going to commit the changes in the index 
+(the "staged" files). 
+There are many uses for this, 
+but the most obvious is to break up your working changes into smaller, 
+self-contained pieces. 
+Perhaps you fixed a bug while you were implementing a feature. 
+You can git add just that file (or git add -p to add just part of a file!) 
+and then commit that bugfix before committing everything 
+If you are using git commit -a then you are just forcing 
+an add of everything right before the commit. 
+Don't use -a if you want to take advantage of staging files.
+
+You can also treat the staged files as an intermediate
+ working copy with the --cached to many commands. 
+For example, git diff --cached will show you how the stage differs from 
+HEAD so you can see what you're about to commit without mixing in your 
+other working changes
