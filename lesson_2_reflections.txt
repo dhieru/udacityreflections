@@ -25,3 +25,9 @@ You can also treat the staged files as an intermediate
 For example, git diff --cached will show you how the stage differs from 
 HEAD so you can see what you're about to commit without mixing in your 
 other working changes
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+If I've made more than one logical change since committing, I can add all
+    the changes affected by the first logical change to the staging area, then
+    commit those without committing the others.
