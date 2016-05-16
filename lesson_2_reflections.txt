@@ -53,3 +53,9 @@ What is the result of merging two branches together? Why do we represent it in t
 	Changes in any of the two branches are merged into the new master branch. The diagram
 representation shows a new node for master. The master node points back to two other parents--one
 to the most recent coin commit and other to the previous master commit.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+The pros of automatic merging is that Git can determine how to merge the branch for me when there
+is no conflict without me having to do anything. The cons of doing merges manually would be that
+it will become very tedious to edit changes when git can do it as long as conflict doesn't exist.
+
