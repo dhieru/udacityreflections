@@ -46,3 +46,10 @@ The diagrams show what the parent of each commit is.  When there are
     multiple branches, I can use the diagrams to easily see what changes will be
     part of each branch.  They also let me easily see what commit each branch
     refers to.
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	
+	Changes in any of the two branches are merged into the new master branch. The diagram
+representation shows a new node for master. The master node points back to two other parents--one
+to the most recent coin commit and other to the previous master commit.
